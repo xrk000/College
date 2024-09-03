@@ -1,0 +1,73 @@
+object mForm: TmForm
+  Left = 500
+  Height = 629
+  Top = 59
+  Width = 1013
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Танки'
+  ClientHeight = 629
+  ClientWidth = 1013
+  DesignTimePPI = 192
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.2.0.0'
+  object Panel: TPanel
+    Left = 0
+    Height = 101
+    Top = 0
+    Width = 1013
+    Align = alTop
+    ClientHeight = 101
+    ClientWidth = 1013
+    TabOrder = 0
+    OnClick = PanelClick
+    object mAdd: TBitBtn
+      Left = 13
+      Height = 61
+      Top = 13
+      Width = 320
+      Caption = 'Добавить танк'
+      OnClick = mAddClick
+      TabOrder = 0
+    end
+    object mEdit: TBitBtn
+      Left = 371
+      Height = 61
+      Top = 13
+      Width = 317
+      Caption = 'Редактировать запись'
+      OnClick = mEditClick
+      TabOrder = 1
+    end
+    object mDel: TBitBtn
+      Left = 717
+      Height = 61
+      Top = 13
+      Width = 282
+      Caption = 'Удалить запись'
+      OnClick = mDelClick
+      TabOrder = 2
+    end
+  end
+  object mRec: TStringGrid
+    Left = 0
+    Height = 528
+    Top = 101
+    Width = 1013
+    Align = alClient
+    ColumnClickSorts = True
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = mEditClick
+    ColWidths = (
+      258
+      191
+      179
+      173
+      214
+    )
+  end
+end

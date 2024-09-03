@@ -1,0 +1,121 @@
+object createRec: TcreateRec
+  Left = 1322
+  Height = 353
+  Top = 581
+  Width = 446
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Создание записи'
+  ClientHeight = 353
+  ClientWidth = 446
+  DesignTimePPI = 120
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
+  object moto: TLabel
+    Left = 16
+    Height = 20
+    Top = 12
+    Width = 71
+    Caption = 'Название:'
+  end
+  object eName: TEdit
+    Left = 16
+    Height = 28
+    Top = 40
+    Width = 420
+    TabOrder = 0
+  end
+  object year: TLabel
+    Left = 16
+    Height = 20
+    Top = 79
+    Width = 27
+    Caption = 'Год:'
+  end
+  object ePetrol: TCheckBox
+    Left = 192
+    Height = 20
+    Top = 144
+    Width = 21
+    TabOrder = 1
+  end
+  object eYear: TEdit
+    Left = 17
+    Height = 28
+    Top = 104
+    Width = 100
+    TabOrder = 2
+  end
+  object petrol: TLabel
+    Left = 17
+    Height = 20
+    Top = 144
+    Width = 164
+    Caption = 'Бензиновый двигатель:'
+  end
+  object motopower: TLabel
+    Left = 17
+    Height = 20
+    Top = 176
+    Width = 111
+    Caption = 'Мощность (л.с.):'
+  end
+  object ePower: TEdit
+    Left = 17
+    Height = 28
+    Top = 200
+    Width = 100
+    TabOrder = 3
+  end
+  object motocolor: TLabel
+    Left = 17
+    Height = 20
+    Top = 240
+    Width = 36
+    Caption = 'Цвет:'
+  end
+  object eColor: TComboBox
+    Left = 17
+    Height = 28
+    Top = 264
+    Width = 125
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'Белый'
+      'Черный'
+      'Красный'
+      'Синий'
+      'Желтый'
+      'Коричневый'
+      'Зеленый'
+      'Мультицвет'
+      'Другой'
+    )
+    TabOrder = 4
+    Text = 'Белый'
+  end
+  object mSave: TBitBtn
+    Left = 17
+    Height = 38
+    Top = 304
+    Width = 196
+    Caption = 'Добавить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 5
+  end
+  object mCancel: TBitBtn
+    Left = 232
+    Height = 38
+    Top = 304
+    Width = 196
+    Cancel = True
+    Caption = 'Отменить'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 6
+  end
+end

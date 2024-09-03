@@ -1,0 +1,65 @@
+object mForm: TmForm
+  Left = 1200
+  Height = 393
+  Top = 171
+  Width = 633
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Мотоциклы'
+  ClientHeight = 393
+  ClientWidth = 633
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '3.0.0.3'
+  object Panel: TPanel
+    Left = 0
+    Height = 63
+    Top = 0
+    Width = 633
+    Align = alTop
+    ClientHeight = 63
+    ClientWidth = 633
+    TabOrder = 0
+    object mAdd: TBitBtn
+      Left = 8
+      Height = 38
+      Top = 8
+      Width = 200
+      Caption = 'Добавить мотоцикл'
+      OnClick = mAddClick
+      TabOrder = 0
+    end
+    object mEdit: TBitBtn
+      Left = 232
+      Height = 38
+      Top = 8
+      Width = 198
+      Caption = 'Редактировать запись'
+      OnClick = mEditClick
+      TabOrder = 1
+    end
+    object mDel: TBitBtn
+      Left = 448
+      Height = 38
+      Top = 8
+      Width = 176
+      Caption = 'Удалить запись'
+      OnClick = mDelClick
+      TabOrder = 2
+    end
+  end
+  object mRec: TStringGrid
+    Left = 0
+    Height = 330
+    Top = 63
+    Width = 633
+    Align = alClient
+    ColumnClickSorts = True
+    FixedCols = 0
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = mEditClick
+  end
+end
