@@ -1,0 +1,166 @@
+object Form1: TForm1
+  Left = 454
+  Height = 948
+  Top = 177
+  Width = 1260
+  Caption = 'Калькулятор Сложных Процентов'
+  ClientHeight = 948
+  ClientWidth = 1260
+  Color = cl3DLight
+  DesignTimePPI = 192
+  LCLVersion = '3.2.0.0'
+  object p1: TLabel
+    Left = 38
+    Height = 1
+    Top = 38
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -48
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    OnClick = p1Click
+  end
+  object sum: TEdit
+    Left = 80
+    Height = 40
+    Top = 320
+    Width = 346
+    MaxLength = 9
+    TabOrder = 0
+    OnChange = sumChange
+    OnKeyPress = sumKeyPress
+  end
+  object pervsum: TLabel
+    Left = 80
+    Height = 32
+    Top = 272
+    Width = 262
+    Caption = 'Первоначальная сумма'
+  end
+  object proc1: TLabel
+    Left = 80
+    Height = 32
+    Top = 392
+    Width = 96
+    Caption = 'Процент'
+  end
+  object proc: TEdit
+    Left = 80
+    Height = 40
+    Top = 440
+    Width = 356
+    MaxLength = 3
+    TabOrder = 1
+    OnChange = procChange
+    OnKeyPress = procKeyPress
+  end
+  object let: TLabel
+    Left = 80
+    Height = 32
+    Top = 504
+    Width = 173
+    Caption = 'Количество лет'
+    OnClick = letClick
+  end
+  object kollet: TEdit
+    Left = 80
+    Height = 40
+    Top = 560
+    Width = 420
+    MaxLength = 3
+    TabOrder = 2
+    OnChange = kolletChange
+    OnKeyPress = kolletKeyPress
+  end
+  object p2: TEdit
+    Left = 446
+    Height = 40
+    Top = 440
+    Width = 54
+    TabOrder = 3
+    Text = '%'
+    OnChange = p2Change
+  end
+  object p3: TEdit
+    Left = 432
+    Height = 40
+    Top = 320
+    Width = 56
+    TabOrder = 4
+    Text = 'Руб'
+    OnChange = p2Change
+  end
+  object sbros: TButton
+    Left = 816
+    Height = 98
+    Top = 624
+    Width = 208
+    Caption = 'Сбросить'
+    TabOrder = 5
+    OnClick = sbrosClick
+  end
+  object zakr: TBitBtn
+    Left = 880
+    Height = 108
+    Top = 784
+    Width = 342
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = zakrClick
+    TabOrder = 6
+  end
+  object res: TEdit
+    Left = 656
+    Height = 40
+    Top = 448
+    Width = 468
+    TabOrder = 7
+    OnChange = resChange
+  end
+  object name1: TStaticText
+    Left = 360
+    Height = 114
+    Top = 72
+    Width = 620
+    Caption = 'Калькулятр процентов               за год'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -45
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = name1Click
+  end
+  object prost: TButton
+    Left = 656
+    Height = 82
+    Top = 526
+    Width = 218
+    Caption = 'Простой'
+    TabOrder = 9
+    OnClick = prostClick
+  end
+  object sloj: TButton
+    Left = 954
+    Height = 82
+    Top = 526
+    Width = 210
+    Caption = 'Сложный'
+    TabOrder = 10
+    OnClick = slojClick
+  end
+  object p4: TEdit
+    Left = 1114
+    Height = 40
+    Top = 448
+    Width = 54
+    TabOrder = 11
+    Text = 'Руб'
+  end
+end
